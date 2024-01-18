@@ -23,7 +23,7 @@
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <script>
-    window.addEventListener("scroll", function(){
+    window.addEventListener("scroll", function () {
       var header = document.querySelector("header")
       header.classList.toggle("sticky", window.scrollY > 0)
     })
@@ -34,7 +34,8 @@
       transition: 0.6s;
       background-color: #D95A2B;
     }
-     header.sticky{
+
+    header.sticky {
       z-index: 10000;
       position: sticky;
       display: flex;
@@ -50,7 +51,7 @@
       transition: 0.6s;
     }
 
-    header.sticky .logo{
+    header.sticky .logo {
       height: 50px;
       margin: 0;
       padding: 5px;
@@ -255,22 +256,56 @@
 
     <header class="text-dark">
       <div class="container">
-        <div class="d-flex flex-wrap justify-content-center justify-content-lg-between">
-          <a href="/" class="d-flex  mb-2 mb-lg-0 text-white text-decoration-none">
-            <img src="src/img/logo.png" alt="Logo Cariocas Beisebol" class="logo">
-            <use xlink:href="#bootstrap" />
-            </svg>
-          </a>
+        <nav class="navbar navbar-expand-lg navbar-dark p-0 m-0">
+          <div class="container-fluid p-0 m-0">
+            <a class="navbar-brand" href="#">
+              <img src="src/img/logo.png" alt="Logo Cariocas Beisebol" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-uppercase fw-bold">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Início</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Calendário
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Beisebol</a></li>
+                    <li><a class="dropdown-item" href="#">Softbol</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
 
-          <ul class="nav  mb-2 align-self-center  mb-md-0 text-uppercase fw-bold ">
-            <li><a href="#" class="nav-link text-dark p-1">Início</a></li>
-            <li><a href="#" class="nav-link  text-white p-1">Calendário</a></li>
-            <li><a href="#" class="nav-link  text-white p-1">Atletas</a></li>
-            <li><a href="#" class="nav-link text-white p-1">Técnicos</a></li>
-            <li><a href="#" class="nav-link text-white p-1">Estatísticas</a></li>
-          </ul>
-          
-        </div>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Atletas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Técnicos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Estatísticas</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link disabled">Disabled</a>
+                </li>
+              </ul>
+              <form class="d-flex">
+                <input class="form-control me-2 " type="search" placeholder="Buscar" aria-label="Search">
+                <button class="btn btn-warning" type="submit">Buscar</button>
+              </form>
+            </div>
+          </div>
+        </nav>
       </div>
     </header>
     <div class="container mt-4">
@@ -281,11 +316,25 @@
             <small>Baseball e Softbol | 02/01/2024</small>
             <h2>Cariocas se prepara receber 50 novos atletas em 2024</h2>
             <p>
-              O Cariocas esta agitando os preparativos para receber 50 novos talentos em 2024. Com um olhar voltado para o futuro, a equipe da Lagoa esta investindo em infraestrutura e programas de treinamento para garantir uma transição suave para os novos atletas. As expectativas são altas, pois a chegada desses talentos promissores promete elevar o nível competitivo da equipe e trazer um novo fôlego para o cenário beisebolistico carioca.
+              O Cariocas esta agitando os preparativos para receber 50 novos talentos em 2024. Com um olhar voltado para
+              o futuro, a equipe da Lagoa esta investindo em infraestrutura e programas de treinamento para garantir uma
+              transição suave para os novos atletas. As expectativas são altas, pois a chegada desses talentos
+              promissores promete elevar o nível competitivo da equipe e trazer um novo fôlego para o cenário
+              beisebolistico carioca.
               <br><br>
-              Com a chegada iminente dos 50 novos atletas, o clube Cariocas esta direcionando recursos significativos para a melhoria da infraestrutura esportiva. Novos centros de treinamento, equipamentos de última geração e instalações de suporte estão sendo implementados para proporcionar o ambiente ideal de desenvolvimento para os novos membros da equipe. Além disso, programas de mentoria e acompanhamento estão sendo estabelecidos para garantir que os atletas se adaptem rapidamente ao ambiente e alcancem todo o seu potencial.
+              Com a chegada iminente dos 50 novos atletas, o clube Cariocas esta direcionando recursos significativos
+              para a melhoria da infraestrutura esportiva. Novos centros de treinamento, equipamentos de última geração
+              e instalações de suporte estão sendo implementados para proporcionar o ambiente ideal de desenvolvimento
+              para os novos membros da equipe. Além disso, programas de mentoria e acompanhamento estão sendo
+              estabelecidos para garantir que os atletas se adaptem rapidamente ao ambiente e alcancem todo o seu
+              potencial.
               <br><br>
-              A chegada dos 50 novos atletas não é apenas uma adição ao time Cariocas, mas também marca o início da criação de uma comunidade esportiva unificada. O clube esta trabalhando em conjunto para promover a integração entre os atletas, incentivando a colaboração e a amizade. Eventos e atividades sociais estão sendo planejados para fortalecer os laços entre os membros das equipes, criando um ambiente positivo e solidário que impulsionará o sucesso coletivo no mundo esportivo em 2024.</p>
+              A chegada dos 50 novos atletas não é apenas uma adição ao time Cariocas, mas também marca o início da
+              criação de uma comunidade esportiva unificada. O clube esta trabalhando em conjunto para promover a
+              integração entre os atletas, incentivando a colaboração e a amizade. Eventos e atividades sociais estão
+              sendo planejados para fortalecer os laços entre os membros das equipes, criando um ambiente positivo e
+              solidário que impulsionará o sucesso coletivo no mundo esportivo em 2024.
+            </p>
           </div>
 
 
@@ -348,9 +397,9 @@
               </a>
             </div>
           </div>
-          </div>
         </div>
       </div>
+    </div>
     </div>
     <div class="container mt-4">
       <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
